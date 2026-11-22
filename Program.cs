@@ -106,11 +106,22 @@ namespace Assignment2
             #region Q12
             //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop to print each book with its position number, like 1.Clean Code.
 
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    Console.WriteLine($"{i + 1}. {books[i]}");
+            //}
+            #endregion
+
+            #region Q13
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            for (int i = 0; i < books.Length; i++)
+            int i = 0;
+            while (i < books.Length)
             {
-                Console.WriteLine($"{i + 1}. {books[i]}");
+                Console.WriteLine(books[i]);
+                i++;
             }
+
             #endregion
         }
     }
