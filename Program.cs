@@ -38,21 +38,31 @@ namespace Assignment2
             #region Q5,Q6,Q7
             //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator.
 
-            string title = "Clean Code";
-            int pages = 464;
-            string Book = "Book: " + title + ", Pages: " + pages;
-            Console.WriteLine(Book);
-            //Build the same sentence as above, but using string interpolation ($"...").
+            //string title = "Clean Code";
+            //int pages = 464;
+            //string Book = "Book: " + title + ", Pages: " + pages;
+            //Console.WriteLine(Book);
+            ////Build the same sentence as above, but using string interpolation ($"...").
 
-            Console.WriteLine($"Book: {title}, Pages: {pages}");
-            //Build the same sentence again, but using string.Format().
-            string Book2 = string.Format("Book: {0}, Pages: {1}", title, pages);
-            Console.WriteLine(Book2);
+            //Console.WriteLine($"Book: {title}, Pages: {pages}");
+            ////Build the same sentence again, but using string.Format().
+            //string Book2 = string.Format("Book: {0}, Pages: {1}", title, pages);
+            //Console.WriteLine(Book2);
 
             #endregion
 
-            #region Q6
+            #region Q8
+            //Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than 300, otherwise prints "Short Book".
 
+            int pages = 464;
+            if (pages > 300)
+            {
+                Console.WriteLine("Long Book");
+            }
+            else
+            {
+                Console.WriteLine("Short Book");
+            }
 
             #endregion
         }
