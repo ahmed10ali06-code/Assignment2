@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 
 namespace Assignment2
@@ -22,12 +23,16 @@ namespace Assignment2
             //Console.WriteLine(ReferenceEquals(Code1, Code2));
             #endregion
 
-            #region Q3
+            #region Q3 ,Q4
             //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same object.Print the final result.
             var Book = new StringBuilder();
             Book.Append("Book List");
             Book.Append(" - Updated");
             Console.WriteLine(Book);
+            //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".Print the result.
+            Book.Replace("Book List", "Library");
+            Console.WriteLine(Book);
+
             #endregion
 
 
