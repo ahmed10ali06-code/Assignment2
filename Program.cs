@@ -25,16 +25,25 @@ namespace Assignment2
 
             #region Q3 ,Q4
             //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same object.Print the final result.
-            var Book = new StringBuilder();
-            Book.Append("Book List");
-            Book.Append(" - Updated");
-            Console.WriteLine(Book);
-            //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".Print the result.
-            Book.Replace("Book List", "Library");
-            Console.WriteLine(Book);
+            //var Book = new StringBuilder();
+            //Book.Append("Book List");
+            //Book.Append(" - Updated");
+            //Console.WriteLine(Book);
+            ////Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".Print the result.
+            //Book.Replace("Book List", "Library");
+            //Console.WriteLine(Book);
 
             #endregion
 
+            #region Q5
+            //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator.
+
+            string title = "Clean Code";
+            int pages = 464;
+            string Book = "Book: " + title + ", Pages: " + pages;
+            Console.WriteLine(Book);
+
+            #endregion
 
         }
     }
