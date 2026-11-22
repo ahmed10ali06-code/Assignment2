@@ -172,18 +172,34 @@ namespace Assignment2
             #region Q17
             //Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop).
 
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            for (int i = 0; i < books.Length; i++)
-            {
-                if (books[i] == "The Pragmatic Programmer")
-                {
-                    continue;
-                }
-                Console.WriteLine(books[i]);
-            }
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    if (books[i] == "The Pragmatic Programmer")
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(books[i]);
+            //}
 
             #endregion
 
+            #region Q18
+            //Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,use return to exit the method early instead of printing anything.
+            string[] books = {"Clean Code","The Pragmatic Programmer","Refactoring" };
+
+            PrintFirstBook(books);
+
+            #endregion
         }
+        public static void PrintFirstBook(string[] Book)
+        {
+            if (Book.Length == 0)
+            {
+                return;
+            }
+                Console.WriteLine(Book[0]);
+        }
+
     }
 }
