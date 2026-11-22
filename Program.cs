@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment2
 {
@@ -128,13 +129,30 @@ namespace Assignment2
 
             #region Q14
             //Write a do-while loop that prints "Checking book..." exactly 3 times.
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //int count = 0;
+            //do
+            //{
+            //    Console.WriteLine($"Checking book {books[count]}");
+            //    count++;
+            //} while (count < 3);
+
+
+
+            #endregion
+
+            #region Q15
+           // Using the same books array, use a foreach loop to print every book title.
+
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            int count = 0;
-            do
+            foreach (string book in books)
             {
-                Console.WriteLine($"Checking book {books[count]}");
-                count++;
-            } while (count < 3);
+                Console.WriteLine(book);
+            }
+
+            #endregion
+
+            #region Q16
 
 
 
