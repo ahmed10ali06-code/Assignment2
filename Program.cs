@@ -142,17 +142,28 @@ namespace Assignment2
             #endregion
 
             #region Q15
-           // Using the same books array, use a foreach loop to print every book title.
+            // Using the same books array, use a foreach loop to print every book title.
 
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            foreach (string book in books)
-            {
-                Console.WriteLine(book);
-            }
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //foreach (string book in books)
+            //{
+            //    Console.WriteLine(book);
+            //}
 
             #endregion
 
             #region Q16
+            //Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring".
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring", };
+
+            for (int i = 0; i < books.Length; i++)
+            {
+                if (books[i] == "Refactoring")
+                {
+                    break;
+                }
+                Console.WriteLine(books[i]);
+            }
 
 
 
